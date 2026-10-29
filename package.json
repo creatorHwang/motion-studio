@@ -5,7 +5,12 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "check": "node --check app.js && node --check handoff.js"
+    "check": "node --check app.js && node --check handoff.js",
+    "build": "node build-pages.mjs",
+    "deploy": "npm run build && wrangler pages deploy .pages-dist --project-name motion-studio --branch main",
+    "preview": "wrangler pages dev ."
+  },
+  "devDependencies": {
+    "wrangler": "^4.155.0"
   }
 }
-
