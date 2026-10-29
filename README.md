@@ -33,5 +33,16 @@
 ## 배포
 정적 파일(`index.html`, `styles.css`, `app.js`)로 동작합니다. 폴더 전체를 정적 호스팅에 배포할 수 있습니다.
 
+## 검증
+
+```text
+npm test
+npm run check
+npm run qa
+npm run qa:visual
+```
+
+브라우저 실행 파일을 자동으로 찾지 못하는 환경에서는 `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`에 Chromium 또는 Edge 실행 파일 경로를 지정합니다. Finder 전달까지 검사할 때는 HTTP 정적 서버를 실행하고 `QA_BASE_URL`에 해당 주소를 지정합니다.
+
 ## 라이선스/출처
 기법 목록 참고: showheyohtaki/motion-explainer (MIT). 본 앱의 Canvas 시각화와 프롬프트는 별도 구현입니다.
