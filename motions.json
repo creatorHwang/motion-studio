@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "en": "Pan",
+    "ko": "팬",
+    "desc": "카메라 위치는 고정하고 좌우로 회전합니다.",
+    "prompt": "Pan the camera smoothly from left to right while keeping its position fixed.",
+    "group": 0,
+    "promptKo": "카메라 위치를 고정한 채 왼쪽에서 오른쪽으로 부드럽게 팬 이동합니다."
+  },
+  {
+    "id": 2,
+    "en": "Tilt",
+    "ko": "틸트",
+    "desc": "카메라 위치는 고정하고 위아래로 회전합니다.",
+    "prompt": "Tilt the camera slowly upward from the foreground toward the sky, without moving its position.",
+    "group": 0,
+    "promptKo": "카메라 위치를 고정하고 전경에서 하늘을 향해 천천히 위로 틸트합니다."
+  },
+  {
+    "id": 3,
+    "en": "Dolly in",
+    "ko": "돌리 인",
+    "desc": "카메라 자체가 피사체를 향해 이동합니다.",
+    "prompt": "Slowly dolly the camera forward toward the subject, maintaining a constant focal length.",
+    "group": 0,
+    "promptKo": "초점거리를 일정하게 유지하면서 카메라 자체가 피사체를 향해 천천히 전진합니다."
+  },
+  {
+    "id": 4,
+    "en": "Zoom in",
+    "ko": "줌 인",
+    "desc": "카메라 위치는 그대로 두고 렌즈로 확대합니다.",
+    "prompt": "Zoom the lens in smoothly toward the subject while the camera remains stationary.",
+    "group": 0,
+    "promptKo": "카메라는 움직이지 않고 렌즈의 초점거리를 늘려 피사체를 부드럽게 확대합니다."
+  },
+  {
+    "id": 5,
+    "en": "Tracking shot",
+    "ko": "트래킹 숏",
+    "desc": "움직이는 피사체를 따라 카메라가 이동합니다.",
+    "prompt": "Track alongside the moving subject at a consistent distance with smooth lateral camera motion.",
+    "group": 0,
+    "promptKo": "움직이는 피사체와 일정한 거리를 유지하며 카메라가 옆에서 함께 이동합니다."
+  },
+  {
+    "id": 6,
+    "en": "Orbit (Arc shot)",
+    "ko": "오비트(아크 숏)",
+    "desc": "피사체를 중심으로 카메라가 원호를 그리며 이동합니다.",
+    "prompt": "Orbit the camera clockwise around the subject in a smooth 120-degree arc, keeping the subject centered.",
+    "group": 0,
+    "promptKo": "피사체를 화면 중앙에 유지하면서 카메라가 시계 방향으로 약 120도 원호를 그리며 이동합니다."
+  },
+  {
+    "id": 7,
+    "en": "Crane up",
+    "ko": "크레인 업",
+    "desc": "카메라가 수직으로 상승해 시야를 넓힙니다.",
+    "prompt": "Raise the camera vertically on a crane, gradually revealing the environment from above.",
+    "group": 0,
+    "promptKo": "크레인 촬영처럼 카메라를 수직으로 상승시켜 주변 환경을 점차 드러냅니다."
+  },
+  {
+    "id": 8,
+    "en": "Dolly zoom (Vertigo)",
+    "ko": "돌리 줌",
+    "desc": "피사체 크기를 유지하며 배경 원근감을 변화시킵니다.",
+    "prompt": "Perform a dolly zoom: move the camera backward while zooming in, keeping the subject the same size as the background perspective changes.",
+    "group": 0,
+    "promptKo": "피사체의 화면상 크기는 유지한 채 카메라를 뒤로 이동시키면서 줌인하여 배경의 원근감을 변화시킵니다."
+  },
+  {
+    "id": 9,
+    "en": "Rack focus",
+    "ko": "랙 포커스",
+    "desc": "가까운 피사체에서 먼 피사체로 초점을 옮깁니다.",
+    "prompt": "Rack focus smoothly from the nearby object to the distant subject, without changing the camera position.",
+    "group": 1,
+    "promptKo": "카메라 위치를 유지하면서 가까운 물체에서 먼 피사체로 초점을 부드럽게 전환합니다."
+  },
+  {
+    "id": 10,
+    "en": "Handheld",
+    "ko": "핸드헬드",
+    "desc": "손으로 촬영하는 듯한 작은 흔들림을 줍니다.",
+    "prompt": "Use subtle handheld camera movement with gentle natural micro-shakes, avoiding excessive jitter.",
+    "group": 1,
+    "promptKo": "과도한 떨림 없이 손으로 들고 촬영한 듯 자연스럽고 미세한 카메라 흔들림을 적용합니다."
+  },
+  {
+    "id": 11,
+    "en": "FPV drone shot",
+    "ko": "FPV 드론 숏",
+    "desc": "드론의 1인칭 시점으로 빠르게 공간을 통과합니다.",
+    "prompt": "Create a fast FPV drone fly-through, weaving smoothly between structures with immersive forward motion.",
+    "group": 1,
+    "promptKo": "FPV 드론의 1인칭 시점으로 구조물 사이를 빠르고 부드럽게 통과하며 전진합니다."
+  },
+  {
+    "id": 12,
+    "en": "Dutch angle",
+    "ko": "더치 앵글",
+    "desc": "카메라를 기울여 불안정한 구도를 만듭니다.",
+    "prompt": "Gradually rotate the camera into a Dutch angle, creating a visibly tilted horizon.",
+    "group": 1,
+    "promptKo": "카메라를 점진적으로 기울여 수평선이 비스듬한 더치 앵글 구도를 만듭니다."
+  },
+  {
+    "id": 13,
+    "en": "Slow motion",
+    "ko": "슬로 모션",
+    "desc": "동작을 실제보다 느리게 보여줍니다.",
+    "prompt": "Show the subject's movement in cinematic slow motion with fluid, detailed motion.",
+    "group": 1,
+    "promptKo": "피사체의 동작을 매끄럽고 세밀한 시네마틱 슬로 모션으로 보여줍니다."
+  },
+  {
+    "id": 14,
+    "en": "Speed ramp",
+    "ko": "스피드 램프",
+    "desc": "한 장면 안에서 재생 속도를 변화시킵니다.",
+    "prompt": "Apply a speed ramp: start at normal speed, accelerate rapidly, then slow down at the key action.",
+    "group": 1,
+    "promptKo": "한 장면에서 정상 속도로 시작해 빠르게 가속한 뒤 핵심 동작에서 감속하는 스피드 램프를 적용합니다."
+  },
+  {
+    "id": 15,
+    "en": "Time-lapse",
+    "ko": "타임랩스",
+    "desc": "긴 시간의 변화를 짧은 영상으로 압축합니다.",
+    "prompt": "Show a fixed-camera time-lapse as clouds and light change rapidly over several hours.",
+    "group": 1,
+    "promptKo": "고정된 카메라로 수 시간 동안의 구름과 빛의 변화를 짧은 시간에 압축한 타임랩스를 보여줍니다."
+  },
+  {
+    "id": 16,
+    "en": "Freeze frame",
+    "ko": "프리즈 프레임",
+    "desc": "움직이는 장면을 잠시 정지합니다.",
+    "prompt": "Freeze the moving action for one second, then resume motion from the same frame.",
+    "group": 1,
+    "promptKo": "움직이는 동작을 정확히 한 프레임에서 1초간 정지시킨 뒤 같은 지점에서 다시 재생합니다."
+  },
+  {
+    "id": 17,
+    "en": "Jump cut",
+    "ko": "점프 컷",
+    "desc": "같은 구도에서 중간 시간을 건너뛰어 연결합니다.",
+    "prompt": "Use a jump cut within the same camera framing, skipping forward in time while preserving the subject position.",
+    "group": 2,
+    "promptKo": "같은 카메라 구도와 피사체 위치를 유지하면서 중간 시간을 건너뛰는 점프 컷을 적용합니다."
+  },
+  {
+    "id": 18,
+    "en": "Match cut",
+    "ko": "매치 컷",
+    "desc": "형태나 동작이 비슷한 두 장면을 이어 붙입니다.",
+    "prompt": "Use a match cut between two scenes with matching shapes and aligned screen positions.",
+    "group": 2,
+    "promptKo": "서로 다른 두 장면에서 유사한 형태와 화면상의 위치를 일치시켜 매치 컷으로 연결합니다."
+  },
+  {
+    "id": 19,
+    "en": "Whip pan",
+    "ko": "위프 팬",
+    "desc": "빠른 카메라 회전의 흐림을 이용해 전환합니다.",
+    "prompt": "Whip pan quickly to the right with strong directional motion blur, transitioning into the next shot.",
+    "group": 2,
+    "promptKo": "카메라를 오른쪽으로 매우 빠르게 팬 이동하여 강한 방향성 모션 블러로 다음 장면에 전환합니다."
+  },
+  {
+    "id": 20,
+    "en": "Cross dissolve",
+    "ko": "크로스 디졸브",
+    "desc": "두 장면을 겹쳐 서서히 전환합니다.",
+    "prompt": "Cross dissolve gradually from the first scene to the second over one second.",
+    "group": 2,
+    "promptKo": "첫 장면과 다음 장면을 약 1초 동안 겹쳐 서서히 전환하는 크로스 디졸브를 적용합니다."
+  },
+  {
+    "id": 21,
+    "en": "Wipe",
+    "ko": "와이프",
+    "desc": "이동하는 경계선으로 다음 장면을 드러냅니다.",
+    "prompt": "Use a left-to-right wipe transition with a clean moving edge revealing the next scene.",
+    "group": 2,
+    "promptKo": "화면 왼쪽에서 오른쪽으로 이동하는 선명한 경계선으로 다음 장면을 드러내는 와이프 전환을 적용합니다."
+  },
+  {
+    "id": 22,
+    "en": "Smash cut",
+    "ko": "스매시 컷",
+    "desc": "대조적인 장면으로 갑자기 전환합니다.",
+    "prompt": "Use an abrupt smash cut from a calm, quiet scene to a dramatically contrasting energetic scene.",
+    "group": 2,
+    "promptKo": "조용하고 정적인 장면에서 강렬하고 대조적인 장면으로 갑자기 스매시 컷 전환합니다."
+  },
+  {
+    "id": 23,
+    "en": "J-cut",
+    "ko": "J컷",
+    "desc": "다음 장면의 소리가 화면보다 먼저 시작됩니다.",
+    "prompt": "Use a J-cut: begin the next scene's audio before cutting to its visuals.",
+    "group": 2,
+    "promptKo": "J컷을 사용해 다음 장면의 소리가 먼저 시작된 후 해당 장면의 영상으로 전환합니다."
+  },
+  {
+    "id": 24,
+    "en": "L-cut",
+    "ko": "L컷",
+    "desc": "이전 장면의 소리가 다음 화면까지 이어집니다.",
+    "prompt": "Use an L-cut: continue the previous scene's audio after cutting to the next scene's visuals.",
+    "group": 2,
+    "promptKo": "L컷을 사용해 다음 장면의 영상으로 먼저 전환하되 이전 장면의 소리를 잠시 유지합니다."
+  }
+]

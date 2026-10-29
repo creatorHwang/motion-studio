@@ -1,0 +1,7 @@
+debug.log
+qa-*.png
+qa-results.json
+visual-*.png
+visual-qa-v4.json
+*.zip
+

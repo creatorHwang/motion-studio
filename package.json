@@ -1,0 +1,11 @@
+{
+  "name": "thehansu-motion-studio",
+  "version": "4.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check app.js && node --check handoff.js"
+  }
+}
+
