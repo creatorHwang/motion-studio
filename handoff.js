@@ -9,6 +9,25 @@ export function readFinderHandoff(search) {
   return { version: '1.0', source: 'finder', intent: 'video', topic, category };
 }
 
+export function getServiceTunnelState(handoff) {
+  return {
+    finderLabel: handoff ? '파인더로 돌아가기' : '파인더에서 주제 찾기',
+    finderUrl: 'https://finder.thehansu.net/#opportunities',
+    promptLibraryUrl: 'https://thehansu.net/'
+  };
+}
+
+export function configureServiceTunnels(handoff, root = document) {
+  const state = getServiceTunnelState(handoff);
+  const finder = root.querySelector('#finder-tunnel');
+  const library = root.querySelector('#prompt-library-tunnel');
+  if (!finder || !library) return false;
+  finder.textContent = state.finderLabel;
+  finder.href = state.finderUrl;
+  library.href = state.promptLibraryUrl;
+  return true;
+}
+
 export function applyFinderHandoff(handoff, root = document) {
   if (!handoff) return false;
   const subject = root.querySelector('#subject');
@@ -25,5 +44,9 @@ export function applyFinderHandoff(handoff, root = document) {
   return true;
 }
 
-if (typeof document !== 'undefined') applyFinderHandoff(readFinderHandoff(location.search));
+if (typeof document !== 'undefined') {
+  const handoff = readFinderHandoff(location.search);
+  configureServiceTunnels(handoff);
+  applyFinderHandoff(handoff);
+}
 
