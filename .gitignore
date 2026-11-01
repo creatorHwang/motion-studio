@@ -7,6 +7,7 @@ visual-qa-v4.json
 THEHANSU_Motion_Preview_*.html
 node_modules/
 .pages-dist/
+dist/
 package-lock.json
 
 

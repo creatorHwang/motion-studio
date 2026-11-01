@@ -12,8 +12,7 @@ export function readFinderHandoff(search) {
 export function getServiceTunnelState(handoff) {
   return {
     finderLabel: handoff ? '파인더로 돌아가기' : '파인더에서 주제 찾기',
-    finderUrl: 'https://finder.thehansu.net/#opportunities',
-    promptLibraryUrl: 'https://thehansu.net/'
+    finderUrl: 'https://finder.thehansu.net/#opportunities'
   };
 }
 
@@ -24,7 +23,6 @@ export function configureServiceTunnels(handoff, root = document) {
   if (!finder || !library) return false;
   finder.textContent = state.finderLabel;
   finder.href = state.finderUrl;
-  library.href = state.promptLibraryUrl;
   return true;
 }
 

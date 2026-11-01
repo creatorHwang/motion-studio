@@ -7,8 +7,8 @@
   <link rel="icon" href="data:,">
   <title>THE한수 Motion Preview · 24 Camera Techniques</title>
   <meta name="description" content="24가지 카메라 움직임과 편집 기법을 3D 장면으로 비교하는 THE한수 Motion Preview">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="composer.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./composer.css">
 </head>
 <body>
   <header class="hero">
@@ -19,7 +19,7 @@
     <div><p class="eyebrow">THE한수 WORKFLOW</p><strong>주제 탐색과 프롬프트 활용을 이어가세요.</strong></div>
     <div class="tunnel-actions">
       <a id="finder-tunnel" class="tunnel-button tunnel-finder" href="https://finder.thehansu.net/#opportunities">파인더에서 주제 찾기</a>
-      <a id="prompt-library-tunnel" class="tunnel-button tunnel-library" href="https://thehansu.net/" target="_blank" rel="noopener noreferrer">프롬프트 서재로 이동</a>
+      <button id="prompt-library-tunnel" class="tunnel-button tunnel-library" type="button">사서에게 다듬기</button>
     </div>
   </nav>
   <section class="compare" aria-labelledby="compare-title">
@@ -54,8 +54,18 @@
   </nav>
   <main id="grid" class="grid" aria-live="polite"></main>
   <footer><span>교육용 3D 시뮬레이션 · 실사 광학 인증 도구가 아닙니다.</span><a href="https://github.com/showheyohtaki/motion-explainer" target="_blank" rel="noopener">Reference: motion-explainer (MIT)</a></footer>
+  <dialog id="librarian-dialog" class="librarian-dialog">
+    <form method="dialog" class="librarian-panel">
+      <div class="librarian-head"><div><p class="eyebrow">PROMPT HANDOFF</p><h2>사서에게 어떤 프롬프트를 보낼까요?</h2></div><button type="submit" class="icon-close" aria-label="닫기">×</button></div>
+      <div class="language-choice" role="group" aria-label="프롬프트 언어 선택"><label><input type="radio" name="handoff-lang" value="ko" checked> 국문</label><label><input type="radio" name="handoff-lang" value="en"> 영문</label></div>
+      <label class="handoff-preview-label">전달 내용 미리보기<textarea id="handoff-preview" rows="7" readonly></textarea></label>
+      <p id="handoff-status" class="handoff-status" aria-live="polite"></p>
+      <div class="librarian-actions"><button type="button" id="handoff-send">사서에게 보내기</button><a href="https://thehansu.net/" target="_blank" rel="noopener noreferrer" class="secondary">THE한수 홈</a><button type="submit" class="secondary">취소</button></div>
+    </form>
+  </dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
-  <script type="module" src="handoff.js"></script>
+  <script src="./app.js"></script>
+  <script type="module" src="./handoff.js"></script>
+  <script type="module" src="./motion-handoff-ui.js"></script>
 </body>
 </html>

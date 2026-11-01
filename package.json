@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
-    "check": "node --check app.js && node --check handoff.js && node --check qa.mjs && node --check visual-qa-v4.mjs",
+    "check": "node --check app.js && node --check handoff.js && node --check motion-handoff.js && node --check motion-handoff-ui.js && node --check qa.mjs && node --check handoff-qa.mjs && node --check visual-qa-v4.mjs",
     "qa": "node qa.mjs",
+    "qa:handoff": "node handoff-qa.mjs",
     "qa:visual": "node visual-qa-v4.mjs",
     "build": "node build-pages.mjs",
+    "build:motion": "node build-motion.mjs",
     "deploy": "npm run build && wrangler pages deploy .pages-dist --project-name motion-studio --branch main",
     "preview": "wrangler pages dev ."
   },

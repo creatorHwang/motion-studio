@@ -26,6 +26,6 @@ test('shows a return action only when the visitor came from Finder', () => {
 });
 
 test('routes the prompt library tunnel through the THE한수 hub', () => {
-  assert.equal(getServiceTunnelState(null).promptLibraryUrl, 'https://thehansu.net/');
+  assert.equal('promptLibraryUrl' in getServiceTunnelState(null), false);
 });
 
