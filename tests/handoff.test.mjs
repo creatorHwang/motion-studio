@@ -20,8 +20,8 @@ test('never accepts an API key field into the handoff object', () => {
 });
 
 test('shows a return action only when the visitor came from Finder', () => {
-  assert.equal(getServiceTunnelState(null).finderLabel, '파인더에서 주제 찾기');
-  assert.equal(getServiceTunnelState({ source: 'finder' }).finderLabel, '파인더로 돌아가기');
+  assert.equal(getServiceTunnelState(null).finderLabel, '레이더+에서 주제 찾기');
+  assert.equal(getServiceTunnelState({ source: 'finder' }).finderLabel, '레이더+로 돌아가기');
   assert.equal(getServiceTunnelState(null).finderUrl, 'https://finder.thehansu.net/#opportunities');
 });
 

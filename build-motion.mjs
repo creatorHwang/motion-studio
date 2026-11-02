@@ -5,6 +5,7 @@ const assets = [
   'index.html',
   'styles.css',
   'composer.css',
+  'brand.css',
   'app.js',
   'handoff.js',
   'motion-handoff.js',

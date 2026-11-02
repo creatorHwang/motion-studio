@@ -11,7 +11,7 @@ export function readFinderHandoff(search) {
 
 export function getServiceTunnelState(handoff) {
   return {
-    finderLabel: handoff ? '파인더로 돌아가기' : '파인더에서 주제 찾기',
+    finderLabel: handoff ? '레이더+로 돌아가기' : '레이더+에서 주제 찾기',
     finderUrl: 'https://finder.thehansu.net/#opportunities'
   };
 }
@@ -35,7 +35,7 @@ export function applyFinderHandoff(handoff, root = document) {
   if (!subject || !scene || !banner || !title) return false;
   subject.value = handoff.topic;
   scene.value = `${handoff.category ? handoff.category + ' 분야의 ' : ''}${handoff.topic} 트렌드를 설명하는 영상 장면`;
-  title.textContent = `파인더에서 선택한 주제 · ${handoff.topic}`;
+  title.textContent = `레이더+에서 선택한 주제 · ${handoff.topic}`;
   banner.hidden = false;
   subject.dispatchEvent(new Event('input', { bubbles: true }));
   scene.dispatchEvent(new Event('input', { bubbles: true }));

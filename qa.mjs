@@ -12,7 +12,7 @@ await page.goto(base,{waitUntil:"load"});
 check("24 cards",await page.locator(".card").count()===24,`count=${await page.locator('.card').count()}`);
 check("24 canvases",await page.locator("canvas").count()===24);
 check("Composer inputs",await page.locator("#composer-form select").count()===6&&await page.locator("#composer-form textarea").count()===1);
-check("Finder tunnel",await page.locator('#finder-tunnel').innerText()==="파인더에서 주제 찾기"&&await page.locator('#finder-tunnel').getAttribute('href')==="https://finder.thehansu.net/#opportunities");
+check("Radar+ tunnel",await page.locator('#finder-tunnel').innerText()==="레이더+에서 주제 찾기"&&await page.locator('#finder-tunnel').getAttribute('href')==="https://finder.thehansu.net/#opportunities");
 await page.locator('#prompt-library-tunnel').click();
 const integratedMotionPath=new URL(base).pathname.startsWith('/motion/');
 check("Librarian handoff dialog",await page.locator('#librarian-dialog').evaluate(element=>element.open));

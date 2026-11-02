@@ -3,23 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0b1020">
+  <meta name="theme-color" content="#f6f4ee">
   <link rel="icon" href="data:,">
-  <title>THE한수 Motion Preview · 24 Camera Techniques</title>
-  <meta name="description" content="24가지 카메라 움직임과 편집 기법을 3D 장면으로 비교하는 THE한수 Motion Preview">
+  <title>THE한수 Motion Studio · 24가지 카메라 기법</title>
+  <meta name="description" content="24가지 카메라 움직임과 편집 기법을 3D 장면으로 비교하고 영상 프롬프트로 만드는 THE한수 Motion Studio">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./composer.css">
+  <link rel="stylesheet" href="./brand.css">
 </head>
 <body>
   <header class="hero">
-    <div><p class="eyebrow">THE한수 · MOTION PREVIEW</p><h1>카메라의 움직임을<br><span>공간으로 이해하세요.</span></h1></div>
+    <div><p class="eyebrow">THE한수 · MOTION STUDIO</p><h1>카메라의 움직임을<br><span>공간으로 이해하세요.</span></h1></div>
     <p class="intro">24가지 카메라 이동·촬영·전환 기법을 3D 좌표, 원근, 렌즈 화각 변화로 비교합니다. 각 프리뷰는 독립적으로 재생하고 국문·영문 프롬프트를 복사할 수 있습니다.</p>
   </header>
   <nav class="service-tunnels" aria-label="THE한수 서비스 이동">
     <div><p class="eyebrow">THE한수 WORKFLOW</p><strong>주제 탐색과 프롬프트 활용을 이어가세요.</strong></div>
     <div class="tunnel-actions">
-      <a id="finder-tunnel" class="tunnel-button tunnel-finder" href="https://finder.thehansu.net/#opportunities">파인더에서 주제 찾기</a>
-      <button id="prompt-library-tunnel" class="tunnel-button tunnel-library" type="button">사서에게 다듬기</button>
+      <a id="finder-tunnel" class="tunnel-button tunnel-finder" href="https://finder.thehansu.net/#opportunities">레이더+에서 주제 찾기</a>
+      <button id="prompt-library-tunnel" class="tunnel-button tunnel-library" type="button">프롬프트 사서에게 다듬기</button>
     </div>
   </nav>
   <section class="compare" aria-labelledby="compare-title">
@@ -56,11 +57,11 @@
   <footer><span>교육용 3D 시뮬레이션 · 실사 광학 인증 도구가 아닙니다.</span><a href="https://github.com/showheyohtaki/motion-explainer" target="_blank" rel="noopener">Reference: motion-explainer (MIT)</a></footer>
   <dialog id="librarian-dialog" class="librarian-dialog">
     <form method="dialog" class="librarian-panel">
-      <div class="librarian-head"><div><p class="eyebrow">PROMPT HANDOFF</p><h2>사서에게 어떤 프롬프트를 보낼까요?</h2></div><button type="submit" class="icon-close" aria-label="닫기">×</button></div>
+      <div class="librarian-head"><div><p class="eyebrow">PROMPT HANDOFF</p><h2>프롬프트 사서에게 무엇을 보낼까요?</h2></div><button type="submit" class="icon-close" aria-label="닫기">×</button></div>
       <div class="language-choice" role="group" aria-label="프롬프트 언어 선택"><label><input type="radio" name="handoff-lang" value="ko" checked> 국문</label><label><input type="radio" name="handoff-lang" value="en"> 영문</label></div>
       <label class="handoff-preview-label">전달 내용 미리보기<textarea id="handoff-preview" rows="7" readonly></textarea></label>
       <p id="handoff-status" class="handoff-status" aria-live="polite"></p>
-      <div class="librarian-actions"><button type="button" id="handoff-send">사서에게 보내기</button><a href="https://thehansu.net/" target="_blank" rel="noopener noreferrer" class="secondary">THE한수 홈</a><button type="submit" class="secondary">취소</button></div>
+      <div class="librarian-actions"><button type="button" id="handoff-send">프롬프트 사서에게 보내기</button><a href="https://thehansu.net/" target="_blank" rel="noopener noreferrer" class="secondary">THE한수 홈</a><button type="submit" class="secondary">취소</button></div>
     </form>
   </dialog>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>

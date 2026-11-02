@@ -1,0 +1,50 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f4ee;
+  --panel: #fffdf8;
+  --panel2: #faf3cf;
+  --line: #d8d5ca;
+  --text: #123b2f;
+  --muted: #5e6f68;
+  --blue: #1d9e75;
+  --cyan: #8fd8bc;
+  --warm: #c2581e;
+}
+
+body {
+  background: radial-gradient(circle at 82% -8%, #faf3cf 0, transparent 34rem), var(--bg);
+  color: var(--text);
+  font-family: "Noto Sans KR", Pretendard, Inter, system-ui, sans-serif;
+}
+
+.hero h1 span { color: var(--blue); }
+.service-tunnels { border-color: #bfd7cd; background: #fffdf7; box-shadow: 0 12px 32px #123b2f0a; }
+.tunnel-finder { border-color: #1d9e75; color: #fff; background: #123b2f; }
+.tunnel-library { border-color: #1d9e75; color: #fff; background: #1d9e75; }
+.compare { border-color: #d9cfa2; background: linear-gradient(100deg, #faf3cf, #fffdf7); }
+.search input { background: #fffdf8; color: var(--text); }
+.tab { background: #fffdf8; color: #496158; }
+.tab.active { background: #123b2f; color: #fff; border-color: #123b2f; }
+.card { background: #fffdf8; box-shadow: 0 10px 28px #123b2f0a; }
+.visual { background: #09111f; }
+.desc, .prompt { color: #5e6f68; }
+.prompt b { color: var(--blue); }
+.actions button { border-color: #8bb9a7; background: #edf7f2; color: #123b2f; }
+.actions .pause { background: #f3f1ea; border-color: var(--line); }
+.actions .sound { background: #c2581e; border-color: #a94b19; color: #fff; }
+.toast { background: #123b2f; color: #fff; }
+
+.composer { border-color: #bfd7cd; background: #fffdf7; box-shadow: 0 14px 36px #123b2f0a; }
+.controls label, .output-panel label, .handoff-preview-label { color: #496158; }
+.controls select, .controls input, .controls textarea, .output-panel textarea { background: #fff; color: #123b2f; }
+.output-panel { background: #f6f4ee; border-color: #d8d5ca; }
+.output-panel textarea { color: #284b40; }
+.composer-actions button, .librarian-actions button, .librarian-actions a { border-color: #1d9e75; background: #123b2f; color: #fff; }
+.composer-actions .secondary, .librarian-actions .secondary { background: #fffdf8; color: #123b2f; border-color: #d8d5ca; }
+.brief-banner { border-color: #8fd8bc; background: #eaf7f1; color: #123b2f; }
+.brief-banner a { color: #167b5d; }
+.librarian-dialog { border-color: #bfd7cd; background: #fffdf8; color: #123b2f; }
+.librarian-dialog::backdrop { background: #123b2f66; }
+.icon-close { color: #5e6f68; }
+.language-choice label { background: #f6f4ee; }
+.handoff-preview-label textarea { background: #fff; color: #284b40; }
